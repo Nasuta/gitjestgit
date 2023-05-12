@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name = "changecolorbutton">
+        <input type="button" name="but" value="Click me!!!" onMouseOver="mouseIn()" onMouseOut="mouseOut()" onclick = "gotoURL()">
+      </form>
+
+
+
+      <a href = '' onclick="go ('https://google.com'); return false;">Click here</a>
+
+
+
+      <br />
+      <input type = 'checkbox' id = 'cb1' onchange = 'showOrHide("cb1", "cat1");'/>Show inside 1
+      <br />
+      <div id = 'cat1' style = 'display: none;'>Show inside 1</div>
+      <input type = 'checkbox' id = 'cb2' onchange = 'showOrHide("cb2", "cat2");' />Show inside  2
+      <br />
+      <div id = 'cat2' style = 'display: none;'>Show inside  2</div>
+      <input type = 'checkbox' id = 'cb3' onchange = 'showOrHide("cb3", "cat3");' />Show inside  3
+      <br />
+      <div id = 'cat3' style = 'display: none;'>Show inside 3</div>
+
+
+      <body onload = 'animateText("dynamic-text", "Cats meowing meow meow", 0);'> 
+      <span id = "dynamic-text"></span>
+    </body>
+    
+      <script src="example.js"></script>
+</body>
+</html>
